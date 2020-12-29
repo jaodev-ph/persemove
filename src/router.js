@@ -8,7 +8,12 @@ const router = new Router({
     {
       name: 'home',
       path: '/',
-      components: () => import('@/App'),
+      component: () => import('@/Home'),
+    },
+    {
+      name: 'system',
+      path: '/system',
+      component: () => import('@/Login'),
     }
   ]
 })
