@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>I am new to heroku!</h1>
+    <h1>email: {{email}}</h1>
   </div>
 </template>
 
@@ -9,6 +10,16 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  data() {
+    return {
+      email: '',
+    }
+  },
+  computed: {
+  },
+  mounted() {
+    this.email = this.$store.state.user.user.email
   }
 }
 </script>
