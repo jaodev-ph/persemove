@@ -1,2 +1,11 @@
 @import './_landing.scss';
+@import '~bootstrap/scss/bootstrap';
 $primary: purple;
+#app {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    p,
+    h5 {
+        color: #747280;
+    }
+}
