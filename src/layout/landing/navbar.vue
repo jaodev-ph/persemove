@@ -1,51 +1,33 @@
 <template>
-  <b-navbar toggleable="lg" type="dark">
-    <b-navbar-brand href="#">Persemove </b-navbar-brand>
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-    <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-nav>
-        <b-nav-item-dropdown text="Search" right>
-          <b-dropdown-item href="#">Trace & Track</b-dropdown-item>
-          <b-dropdown-item href="#">ES</b-dropdown-item>
-          <b-dropdown-item href="#">RU</b-dropdown-item>
-          <b-dropdown-item href="#">FA</b-dropdown-item>
-        </b-nav-item-dropdown>
-        <b-nav-item href="#">About</b-nav-item>
-        <b-nav-item href="#">Contact</b-nav-item>
-      </b-navbar-nav>
-
-      <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto">
-        <b-nav-form>
-          <b-form-input
-            size="sm"
-            class="mr-sm-2"
-            placeholder="Search"
-          ></b-form-input>
-          <b-button size="sm" class="my-2 my-sm-0" type="submit"
-            >Search</b-button
-          >
-        </b-nav-form>
-
-        <b-nav-item-dropdown text="Lang" right>
-          <b-dropdown-item href="#">EN</b-dropdown-item>
-          <b-dropdown-item href="#">ES</b-dropdown-item>
-          <b-dropdown-item href="#">RU</b-dropdown-item>
-          <b-dropdown-item href="#">FA</b-dropdown-item>
-        </b-nav-item-dropdown>
-
-        <b-nav-item-dropdown right>
-          <!-- Using 'button-content' slot -->
-          <template #button-content>
-            <em>User</em>
-          </template>
-          <b-dropdown-item href="#">Profile</b-dropdown-item>
-          <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-        </b-nav-item-dropdown>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
+  <div class="nav-container">
+      <img src="@/assets/icons/logo.png" alt="" />
+      <header>
+        <a href="/" class="logo"
+          ><span class="secondary">Perse</span><span class="primary">Move</span>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#">Track</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="social-header">
+        <ul class="social-links">
+          <li>
+            <a href="#"><img src="@/assets/icons/fb.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="@/assets/icons/ig.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="@/assets/icons/offer.svg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
 </template>
 
 <script>

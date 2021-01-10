@@ -10,6 +10,7 @@ import vuetify from 'vuetify'
 import mainscss from './assets/scss/_main.scss'
 import tailwind from './index.css'
 import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
+import ScrollOut from "scroll-out";
 
 Vue.use(BootstrapVue)
 Vue.use(BootstrapVueIcons)
@@ -21,5 +22,6 @@ new Vue({
     store,
     mainscss,
     tailwind,
+    ScrollOut,
     render: h => h(App),
 }).$mount('#app')
