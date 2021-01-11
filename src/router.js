@@ -11,16 +11,10 @@ const router = new Router({
             component: () =>
                 import ('@/views/landing/Index'),
             children: [{
-                    path: '/',
-                    component: () =>
-                        import ('@/views/landing/Home.vue')
-                },
-                {
-                    path: '/about',
-                    component: () =>
-                        import ('@/views/landing/About.vue')
-                }
-            ]
+                path: '/',
+                component: () =>
+                    import ('@/views/landing/Home.vue')
+            }, ]
         },
         {
             name: 'system',

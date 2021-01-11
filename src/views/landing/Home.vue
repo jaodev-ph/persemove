@@ -82,50 +82,50 @@
     </div>
 
     <div class="service">
-      <div class="container">
-        <div class="service-container">
-          <ul>
-            <li class="transition2">
+      <div class="service-container">
+        <ul>
+          <li>
+            <div class="overlay-img">
               <div class="icon-container one">
                 <img
                   src="@/assets/icons/logistics-delivery-truck-in-movement.svg"
                   alt=""
                 />
               </div>
-              <p class="service-title">Fast Delivery</p>
+              <h5>Fast Delivery</h5>
               <p class="service-desc">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
                 autem.
               </p>
-            </li>
-            <li class="transition2">
-              <div class="icon-container two">
-                <img src="@/assets/icons/24-hours-delivery.svg" alt="" />
-              </div>
-              <p class="service-title">24/7 Operation Process</p>
-              <p class="service-desc">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
-                autem.
-              </p>
-            </li>
-            <li class="transition2">
-              <div class="icon-container three">
-                <img src="@/assets/icons/offer.svg" alt="" />
-              </div>
-              <p class="service-title">Affortable Rates</p>
-              <p class="service-desc">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
-                autem.
-              </p>
-            </li>
-          </ul>
-        </div>
+            </div>
+          </li>
+          <li>
+            <div class="icon-container two">
+              <img src="@/assets/icons/24-hours-delivery.svg" alt="" />
+            </div>
+            <p class="service-title">24/7 Operation Process</p>
+            <p class="service-desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
+              autem.
+            </p>
+          </li>
+          <li>
+            <div class="icon-container three">
+              <img src="@/assets/icons/offer.svg" alt="" />
+            </div>
+            <p class="service-title">Affortable Rates</p>
+            <p class="service-desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
+              autem.
+            </p>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="partner transition-opacity-in-out">
       <div class="partner-container">
         <div class="partner-title">
-          <h3>Our Partners</h3>
+          <h1>Our Partners</h1>
         </div>
         <div class="partner-item">
           <img src="@/assets/icons/offer.svg" alt="" />
@@ -134,6 +134,25 @@
           <img src="@/assets/icons/offer.svg" alt="" />
         </div>
       </div>
+    </div>
+    <div class="book-wrapper">
+      <h2>Get Your Free Consultation</h2>
+      <ul class="links">
+        <li>
+          <a href="#"><img src="@/assets/icons/twitter.svg" alt="" /> </a>
+          <p>Twitter</p>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/persemoveph/"
+            ><img src="@/assets/icons/fb.svg" alt="" />
+          </a>
+          <p>Facebook</p>
+        </li>
+        <li>
+          <a href="#"><img src="@/assets/icons/ig.svg" alt="" /> </a>
+          <p>Instagram</p>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -146,7 +165,7 @@ export default {
       scope: this.$el,
     });
     ScrollOut({
-      targets: ['.feature', '.icon-container'],
+      targets: [".feature", ".icon-container"],
       offset: 400,
     });
   },

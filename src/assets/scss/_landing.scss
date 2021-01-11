@@ -18,11 +18,12 @@
 .company-banner {
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     padding: 2em 1em;
     background-color: transparent;
-    background: url('../icons/pmbanner.png');
-    background-size: contain;
+    background: url('../icons/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     h1 {
         font-weight: bold;
         box-shadow: 10px;
@@ -46,11 +47,12 @@
 //services
 .service {
     text-align: center;
-    background-color: rgb(171, 55, 55);
+    background-color: #EAEAEA;
     padding: 10em 2em;
     .service-container {
         ul {
             li {
+                height: 45vh;
                 background-color: white;
                 padding: 5em 2em;
                 border-radius: 1em;
@@ -100,10 +102,7 @@
 
 //navigation
 .nav-container {
-    border-top: 5px solid $primary;
-    border-bottom: 1px solid darkgray;
     background-color: white;
-    box-shadow: 2px rgba(169, 169, 169, 0.76);
     a {
         color: #777777;
     }
@@ -115,10 +114,9 @@
     header {
         display: flex;
         justify-content: space-between;
-        padding: 1.3em;
+        padding: 1.3em 0;
         .logo {
             font-weight: bold;
-            margin-left: 4em;
         }
         ul {
             display: flex;
@@ -146,34 +144,60 @@
 //footer
 .footer-wrapper {
     position: relative;
-    height: 45vh;
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 1;
-    padding: 3em 0 8em;
-    text-align: center;
+    padding: 3em 1em 5em 1em;
     bottom: 0;
+    .logo {
+        text-align: center;
+        padding-bottom: 1.5em;
+        img {
+            height: 50px;
+            width: 50px;
+        }
+    }
+    .footer-main {
+        font-size: 14px;
+        .about,
+        .locaiton {
+            .title {
+                display: flex;
+                img {
+                    height: 25px;
+                    width: 25px;
+                }
+                h5 {
+                    font-size: 16px;
+                    font-weight: bold;
+                    align-items: center;
+                    margin: 3px;
+                }
+            }
+            p {
+                margin: 0 2em;
+            }
+            margin: 1em;
+        }
+    }
     img {
         height: 37px;
         width: 37px;
     }
     .footer-desc {
+        display: flex;
         padding: .5em 0;
-        a {
-            color: $secondary;
-        }
-        a:hover {
-            color: $primary;
-        }
-    }
-    .footer-bottom {
-        position: relative;
-        bottom: 0;
-        padding: 1em 0;
-        .links {
-            padding: 0;
+        padding: 3em 0;
+        justify-content: center;
+        ul {
+            display: flex;
             li {
-                display: inline;
-                padding-right: 10px;
+                padding-right: 1em;
+            }
+            a {
+                color: $secondary;
+            }
+            a:hover {
+                color: $primary;
             }
         }
     }
@@ -186,7 +210,7 @@
 
 //Our partners 
 .partner {
-    background-color: #FFF;
+    background-color: #F5F5F5;
 }
 
 .partner-title {
@@ -214,13 +238,16 @@
 //feature section
 .feature {
     position: relative;
-    background-color: rgb(245, 245, 245);
     width: 100%;
     padding: 10em 2em;
     z-index: 1;
     font-size: 13px;
     align-items: center;
     .feature-header {
+        background: url('../background/buckle.png');
+        background-size: inherit;
+        background-position: center;
+        background-repeat: no-repeat;
         text-align: center;
         margin: 50px 0;
         z-index: 1;
@@ -248,7 +275,95 @@
     }
 }
 
+//booking 
+.book-wrapper {
+    position: relative;
+    background-color: #EAEAEA;
+    bottom: 0;
+    padding: 3em;
+    height: 70vh;
+    text-align: center;
+    h2 {
+        font-weight: bold;
+        margin: 1em;
+        font-size: 48px;
+    }
+    .links {
+        padding: 3em 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        li {
+            display: flex;
+            a {}
+            p {
+                padding-left: 3px;
+            }
+            img {
+                height: 2rem;
+                height: 2rem;
+            }
+            padding-right: 10px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1360px) {
+    .service,
+    .partner {
+        padding: 80em;
+    }
+    .footer-wrapper {
+        padding: 2em 7em 5em 7em;
+    }
+    .feature {
+        padding: 10em 20em;
+        h3 {
+            font-size: 38px;
+        }
+        h2 {
+            font-size: 48px;
+        }
+        h6 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 20px;
+        }
+        .feature-body-item {
+            padding-top: 1em;
+            display: flex;
+            .f-icon {
+                flex-basis: 50%;
+                margin-right: 1rem;
+                a img {
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+            .fbi-description {
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .service,
+    .partner {
+        padding: 10em;
+    }
+    .footer-wrapper {
+        padding: 2em 7em 5em 7em;
+    }
+}
+
 @media only screen and (min-width: 860px) {
+    .container {
+        padding: 0;
+        margin: 0;
+    }
     .feature {
         .feature-item-wrapper {
             display: grid;
@@ -264,5 +379,9 @@
             grid-template-columns: repeat(3, auto);
             grid-gap: 1em;
         }
+    }
+    .footer-main {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
     }
 }
