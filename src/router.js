@@ -17,10 +17,16 @@ const router = new Router({
             }, ]
         },
         {
-            name: 'system',
-            path: '/system',
+            name: 'Login',
+            path: '/login',
             component: () =>
                 import ('@/Login'),
+        },
+        {
+            name: 'Sys',
+            path: '/sys',
+            component: () =>
+                import ('@/views/sys/Index.vue'),
         }
     ]
 })

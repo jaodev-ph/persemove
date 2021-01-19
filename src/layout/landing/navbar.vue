@@ -12,11 +12,16 @@
               </h4>
             </a>
             <nav>
-              <ul>
+              <ul class="nav-links">
                 <li><a href="#">Track</a></li>
                 <li><a href="about">About</a></li>
                 <li><a href="#">Contact</a></li>
               </ul>
+              <div class="burger" @click="burgerClick">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
             </nav>
           </header>
           <div class="social-header">
@@ -39,7 +44,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    burgerClick() {
+      let burger = document.querySelector(".burger");
+      console.log(burger.classList);
+      burger.classList.toggle("toggle");
+    },
+  },
+};
 </script>
 
 <style>
