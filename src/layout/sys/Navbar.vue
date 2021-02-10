@@ -9,7 +9,7 @@
               :size="50"
               :width="7"
               :value="value"
-              :color="lime"
+              color="lime"
               class="mt-n1"
             >
               {{ value }}
@@ -19,12 +19,16 @@
             <v-icon right class="mt-1"> fas fa-bars</v-icon>
           </v-col>
         </v-row>
+        <v-btn @click="logout">
+          <v-icon> mdi-logout </v-icon>
+        </v-btn>
       </v-container>
     </v-navigation-drawer>
   </nav>
 </template>
 
 <script>
+import User from "@/services/User";
 export default {
   data() {
     return {
@@ -43,6 +47,12 @@ export default {
       }
       this.value += 10;
     }, 1000);
+  },
+  methods: {
+    logout() {
+      User.logout();
+      this.$router.push({ name: "Home" });
+    },
   },
 };
 </script>

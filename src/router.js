@@ -6,11 +6,11 @@ const router = new Router({
     mode: 'history',
     base: process.env.BASE_URL,
     routes: [{
-            name: 'Home',
             path: '/',
             component: () =>
                 import ('@/views/landing/Index'),
             children: [{
+                name: 'Home',
                 path: '/',
                 component: () =>
                     import ('@/views/landing/Home.vue')
@@ -21,6 +21,12 @@ const router = new Router({
             path: '/login',
             component: () =>
                 import ('@/Login'),
+        },
+        {
+            name: 'Register',
+            path: '/register',
+            component: () =>
+                import ('@/Register'),
         },
         {
             name: 'Sys',

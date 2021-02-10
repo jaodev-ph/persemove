@@ -2,6 +2,8 @@ import '@babel/polyfill'
 import 'mutationobserver-shim'
 import Vue from 'vue'
 import './plugins/bootstrap-vue'
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import App from './App.vue'
 import router from './router'
