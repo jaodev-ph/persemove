@@ -29,10 +29,10 @@ const router = new Router({
                 import ('@/Register'),
         },
         {
-            name: 'Sys',
-            path: '/sys',
+            name: 'Lara Mart',
+            path: '/laramart',
             component: () =>
-                import ('@/views/sys/Index.vue'),
+                import ('@/views/laramart/Index.vue'),
         }
     ]
 })
