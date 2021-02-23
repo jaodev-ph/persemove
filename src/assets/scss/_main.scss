@@ -11,9 +11,12 @@
 #app {
     font-family: 'Poppins', arial;
     line-height: 1.8;
-    p,
+    p {
+        color: #d3d2d6;
+    }
+    h6,
     h5 {
-        color: #747280;
+        font-weight: 600;
     }
     h1 {
         font-weight: bold;
@@ -33,9 +36,6 @@
     .secondary {
         color: $secondary;
         font-weight: bold;
-    }
-    p {
-        font-size: 16px;
     }
 }
 

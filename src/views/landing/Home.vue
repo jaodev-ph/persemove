@@ -3,14 +3,16 @@
     <!-- <div class="company-banner">
       <img src="@/assets/icons/banner.jpg" alt="" />
     </div> -->
+	<div class="cb-wrapper">
     <div class="company-banner">
+		<!-- <img src="@/assets/icons/banner.jpg" alt=""> -->
       <!-- <h1><span class="sec-color"> Discover</span></h1>
         <h4>
           How many can save money and get one step ahead of your competition
         </h4>
         <button class="btn btn-start">Start Now</button> -->
     </div>
-
+</div>
     <div class="feature">
       <div class="feature-header">
         <h3>
@@ -103,7 +105,7 @@
             <div class="icon-container two">
               <img src="@/assets/icons/24-hours-delivery.svg" alt="" />
             </div>
-            <p class="service-title">24/7 Operation Process</p>
+            <h5 class="service-title">24/7 Operation Process</h5>
             <p class="service-desc">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
               autem.
@@ -113,7 +115,7 @@
             <div class="icon-container three">
               <img src="@/assets/icons/offer.svg" alt="" />
             </div>
-            <p class="service-title">Affortable Rates</p>
+            <h5 class="service-title">Affortable Rates</h5>
             <p class="service-desc">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
               autem.
