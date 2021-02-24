@@ -1,18 +1,26 @@
 <template>
   <div class="landing">
-    <!-- <div class="company-banner">
-      <img src="@/assets/icons/banner.jpg" alt="" />
-    </div> -->
-	<div class="cb-wrapper">
-    <div class="company-banner">
-		<!-- <img src="@/assets/icons/banner.jpg" alt=""> -->
-      <!-- <h1><span class="sec-color"> Discover</span></h1>
-        <h4>
-          How many can save money and get one step ahead of your competition
-        </h4>
-        <button class="btn btn-start">Start Now</button> -->
+    <div class="cb-wrapper">
+      <div class="container">
+        <header>
+          <div class="company-message">
+            <h1><span class="primary">Discover</span></h1>
+            <h4>
+              How many can save money and get one step ahead of your competition
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Obcaecati tempore reiciendis distinctio dolorem, alias quis!
+              <!-- <div class="typewriter">
+                <span>Eius magnam doloremque nostrum! </span>
+              </div> -->
+            </h4>
+            <button class="btn btn-start">Start Now</button>
+          </div>
+          <div class="company-banner">
+            <!-- <img src="@/assets/photo/undraw_logistics.svg" alt="" /> -->
+          </div>
+        </header>
+      </div>
     </div>
-</div>
     <div class="feature">
       <div class="feature-header">
         <h3>
@@ -124,16 +132,18 @@
         </ul>
       </div>
     </div>
-    <div class="partner transition-opacity-in-out">
-      <div class="partner-container">
-        <div class="partner-title">
-          <h1>Our Partners</h1>
-        </div>
-        <div class="partner-item">
-          <img src="@/assets/icons/offer.svg" alt="" />
-          <img src="@/assets/icons/offer.svg" alt="" />
-          <img src="@/assets/icons/offer.svg" alt="" />
-          <img src="@/assets/icons/offer.svg" alt="" />
+    <div class="partner-wrapper">
+      <div class="container">
+        <div class="partner-container">
+          <div class="partner-title">
+            <h1>Our Partners</h1>
+          </div>
+          <div class="partner-item">
+            <img src="@/assets/icons/offer.svg" alt="" />
+            <img src="@/assets/icons/offer.svg" alt="" />
+            <img src="@/assets/icons/offer.svg" alt="" />
+            <img src="@/assets/icons/offer.svg" alt="" />
+          </div>
         </div>
       </div>
     </div>
