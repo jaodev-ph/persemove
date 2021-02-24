@@ -29,7 +29,7 @@
         <h2><strong>A better way to send package</strong></h2>
         <h5 class="text-newline">
           Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-          voluptatum cupiditate veritatis in accusamus quisquam.
+          voluptatum cupiditate veritatis in accusamus quisquamasd.
         </h5>
       </div>
       <div class="feature-body">
