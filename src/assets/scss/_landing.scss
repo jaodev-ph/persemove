@@ -23,7 +23,7 @@
     background-image: url("../photo/undraw_logistics.svg");
     background-position: right;
     background-repeat: no-repeat;
-    background-size: 60%, 70%;
+    background-size: 50%, 60%;
     z-index: 1;
     header {
         margin-top: 6rem;
@@ -280,15 +280,17 @@
 .feature {
     position: relative;
     width: 100%;
+    height: 92vh;
     padding: 15rem 2em;
     z-index: 1;
     font-size: 13px;
     align-items: center;
+    background: url('../photo/undraw_On_the_way_re_swjt.svg');
+    background-size: 35% 35%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: 0;
     .feature-header {
-        // background: url('../background/buckle.png');
-        background-size: inherit;
-        background-position: center;
-        background-repeat: no-repeat;
         text-align: center;
         margin: 50px 0;
         z-index: 1;
@@ -324,6 +326,10 @@
     padding: 3em;
     height: 70vh;
     text-align: center;
+    background: url('../photo/undraw_deliveries_131a.svg');
+    background-size: 35% 35%;
+    background-position: left;
+    background-repeat: no-repeat;
     h2 {
         font-weight: bold;
         margin: 1em;
@@ -354,6 +360,11 @@
     .service,
     .partner {
         padding: 5em 40em;
+    }
+    // .nav-container,
+    .feature,
+    .cb-wrapper {
+        padding: 5em 20em;
     }
     .footer-wrapper {
         padding: 2em 20em 5em 20em;
@@ -453,6 +464,12 @@
                 }
             }
         }
+    }
+    .feature {
+        height: 120vh;
+        padding: 0;
+        background-size: 400px 300px;
+        .feature-header {}
     }
     .nav-container {
         position: fixed;
