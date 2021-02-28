@@ -48,7 +48,7 @@ export default {
     async login() {
       try {
         await User.login(this.form);
-        localStorage.setItem("auth", "true")
+        localStorage.setItem("auth", "true");
         this.$router.push({ name: "Sys" });
       } catch (err) {
         this.err = err.response.data.errors;

@@ -1,7 +1,5 @@
 <template>
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
         <div class="nav-container">
           <!-- <img src="@/assets/icons/logo.png" alt="" /> -->
           <header>
@@ -38,9 +36,7 @@
             </ul>
           </div>
         </div>
-      </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -48,9 +44,17 @@ export default {
   methods: {
     burgerClick() {
       let burger = document.querySelector(".burger");
-      console.log(burger.classList);
+      let navlinks = document.querySelector(".nav-links");
+      console.log(navlinks.style.display);
       burger.classList.toggle("toggle");
-    },
+      if (navlinks.style.display === "none" || navlinks.style.display == "") {
+        navlinks.style.display = "inline";
+      } else {
+        navlinks.style.display = "none";
+      }
+	},
+	navlinks() {
+	}
   },
 };
 </script>
