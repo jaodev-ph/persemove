@@ -61,12 +61,14 @@
     }
 }
 .higlight-wrapper {
-    background-color: #238fce;
+    background-color: #333A45;
+    background-size: 50%;
 
     .hg-content {
         position: relative;
         display: grid;
-        height: 120vh;
+        height: 250vh;
+        margin-top: 5rem;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 0.5rem;
         align-items: center;
@@ -144,8 +146,8 @@
 
 //navigation
 .nav-wrapper {
-    background-color: $black-90;
-    box-shadow: 1px 1px #777777;
+    // background-color: $black-90;
+    // box-shadow: 1px 1px #777777;
 }
 .nav-container {
     position: relative;
