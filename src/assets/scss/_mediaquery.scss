@@ -1,0 +1,189 @@
+@media only screen and (min-width: 1890px) {
+    .service,
+    .partner {
+        padding: 5em 20em;
+    }
+    // .nav-container,
+    .feature,
+    .cb-wrapper {
+        padding: 5em 20em;
+    }
+    .footer-wrapper {
+        padding: 2em 20em 5em 20em;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .service,
+    .partner {
+        padding: 5em 40em;
+    }
+    .cb-wrapper {
+        height: 120vh;
+        .company-message {
+            h1 {
+                font-size: 1.8rem;
+            }
+            h4 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    // .nav-container,
+    .feature {
+        padding: 5em 15em;
+    }
+    .footer-wrapper {
+        padding: 2em 20em 5em 20em;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .service,
+    .partner {
+        padding: 5em;
+    }
+    .footer-wrapper {
+        padding: 2em 8em 5em 8em;
+    }
+}
+
+@media only screen and (min-width: 860px) {
+    body {
+        overflow-x: hidden;
+    }
+    .container {
+        padding: 0;
+        margin: 0;
+    }
+    .feature {
+        height: 150vh;
+        .feature-item-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            padding: 0;
+        }
+        .text-newline {
+            margin: 0 10rem;
+        }
+    }
+    .service {
+        .service-container ul {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 1em;
+        }
+    }
+    .footer-main {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media only screen and (min-width: 643px) {
+    .nav-links {
+        display: inline-flex !important;
+    }
+    h5 {
+        font-size: 1em;
+    }
+    p {
+        font-size: 12px;
+        margin: 0;
+    }
+    .feature {
+        height: 250;
+        .feature-item-wrapper {
+            .feature-body-item {
+                display: inline;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 643px) {
+    .cb-wrapper {
+        // display: grid;
+        // grid-template-columns: 50% auto;
+        height: 120vh;
+        background-image: none;
+        text-align: center;
+        margin-top: 7rem;
+        header {
+            .company-message {
+                position: relative;
+                padding: 0rem;
+                width: 100%;
+                h1 {
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                    box-shadow: 10px;
+                }
+                h4 {
+                    font-size: 1.5rem;
+                    word-wrap: break-word;
+                }
+                .btn-start {
+                    margin: 1em;
+                    height: 60px;
+                    width: 180px;
+                    font-size: 26px;
+                    background-color: $primary;
+                    color: white;
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+    .txt {
+        font-size: 2rem !important;
+    }
+    .feature {
+        height: 120vh;
+        padding: 0;
+        background-size: 400px 300px;
+    }
+    .nav-container {
+        position: fixed;
+        z-index: 9;
+        top: 0;
+        left: 0;
+        background-color: white;
+        .burger {
+            display: block;
+        }
+        .nav-links {
+            position: fixed;
+            height: 250vh;
+            width: 100%;
+            left: 0;
+            top: 8.2vh;
+            color: $primary;
+            background-color: rgba(0, 0, 0, 0.774);
+            z-index: 99;
+            display: none;
+            text-align: center;
+            li {
+                a {
+                    font-size: 2em;
+                    padding: 1rem;
+                    color: white;
+                }
+            }
+        }
+    }
+    .book-wrapper {
+        h2 {
+            font-size: 30px;
+        }
+        .links {
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            li {
+                padding: 0;
+                margin: 3px;
+            }
+        }
+    }
+}

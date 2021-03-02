@@ -27,9 +27,33 @@
         </header>
       </div>
     </div>
-	<div class="higlight-wrapper">
-		
-	</div>
+    <div class="higlight-wrapper">
+      <div class="container">
+        <div class="hg-content">
+          <div class="l-content-1">
+            <h1>
+              <img src="@/assets/photo/undraw_Timeline_re_aw6g.svg" alt="" />
+            </h1>
+          </div>
+          <div class="r-content-1">
+            <h1>R1</h1>
+          </div>
+          <div class="l-content-2">
+            <h1>l1</h1>
+          </div>
+          <div class="r-content-2">
+            <img src="@/assets/photo/undraw_Timeline_re_aw6g.svg" alt="" />
+          </div>
+          <div class="l-content-3">
+            <img src="@/assets/photo/undraw_Timeline_re_aw6g.svg" alt="" />
+          </div>
+
+          <div class="r-content-3">
+            <h1>R3</h1>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="feature">
       <div class="feature-header">
         <h3>

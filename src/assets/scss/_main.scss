@@ -1,9 +1,11 @@
-@import './_colors';
-@import './_landing.scss';
-@import '~bootstrap/scss/bootstrap';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,200&display=swap');
+@import "./_colors";
+@import "./_landing.scss";
+@import "./_effects.scss";
+@import "./_mediaquery.scss";
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap");
 * {
     margin: 0px;
     padding: 0px;
@@ -15,23 +17,28 @@
         box-sizing: border-box;
         line-height: 1.7;
     }
-    color: $black-70;
-    font-family: 'Raleway',
-    sans-serif;
+    color: $black-80;
+    font-family: "Raleway", sans-serif;
     line-height: 1.8;
+    span {
+        padding: 0;
+    }
     p {
         color: #747280;
     }
     h1,
     h2 {
         font-weight: 200;
-        font-weight: bold;
+        font-weight: 700;
     }
     h1 {
         font-size: 3.5em;
     }
-    h6,
-    h5 {
+    h4 {
+        margin: 0;
+    }
+    h5,
+    h6 {
         font-weight: 600;
     }
     ul {
@@ -40,7 +47,11 @@
         padding: 0;
     }
     a {
+        color: #ffffff;
         text-decoration: none;
+    }
+    a:hover {
+        color: $primary;
     }
     .primary {
         color: $primary;
@@ -64,27 +75,6 @@
     }
     .txt {
         font-size: 3rem;
-        align-items: center;
-    }
-    .txt-type {
         text-align: center;
-        padding: 0 1.5rem;
-    }
-    .txt-type>.txt {
-        border-right: 0.2rem solid $black-70;
-    }
-    .img-wrapper {
-        img {
-            height: 100%;
-            width: 100%;
-            border-radius: 43px;
-        }
-    }
-    .type-writter-wrapper {}
-}
-
-@media only screen and (max-width: 500px) {
-    body {
-        font-size: 18px;
     }
 }
