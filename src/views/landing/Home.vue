@@ -4,16 +4,22 @@
       <div class="container">
         <header>
           <div class="company-message">
-            <h1><span class="primary">Discover</span></h1>
+            <h1>
+              <span class="secondary">MAKE YOUR</span
+              ><span class="primary"> FIRST MOVE</span>
+            </h1>
             <h4>
-              How many can save money and get one step ahead of your competition
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Obcaecati tempore reiciendis distinctio dolorem, alias quis!
-              <!-- <div class="typewriter">
-                <span>Eius magnam doloremque nostrum! </span>
-              </div> -->
+              We Deliver and maintain your parcel effienctly and conveniently.
+              We Accepts different kinds of categories
+              <span>
+                <type-writter
+                  :txtElement="this.txtElement"
+                  :words="this.word"
+                  :wait="this.wait"
+                >
+                </type-writter
+              ></span>
             </h4>
-            <button class="btn btn-start">Start Now</button>
           </div>
           <div class="company-banner">
             <!-- <img src="@/assets/photo/undraw_logistics.svg" alt="" /> -->
@@ -21,6 +27,9 @@
         </header>
       </div>
     </div>
+	<div class="higlight-wrapper">
+		
+	</div>
     <div class="feature">
       <div class="feature-header">
         <h3>
@@ -132,6 +141,7 @@
         </ul>
       </div>
     </div>
+    <div class="image-container"></div>
     <div class="partner-wrapper">
       <div class="container">
         <div class="partner-container">
@@ -171,7 +181,43 @@
 
 <script>
 import ScrollOut from "scroll-out";
+import TypeWritter from "../../components/component/typewriter";
 export default {
+  components: {
+    TypeWritter,
+  },
+  data() {
+    return {
+      txtElement: "asdsad",
+      word: [
+        {
+          item: "Cargo. ",
+          img: require("../../assets/photo/undraw_logistics_x4dc (1).svg"),
+        },
+        {
+          item: "Home Supplies. ",
+          img: require("../../assets/photo/undraw_book_lover_mkck.svg"),
+        },
+        {
+          item: "Vegetables and fruits. ",
+          img: require("../../assets/photo/undraw_environment_iaus.svg"),
+        },
+        {
+          item: "Appliances. ",
+          img: require("../../assets/photo/undraw_smart_home_28oy.svg"),
+        },
+        {
+          item: "Gadgets. ",
+          img: require("../../assets/photo/undraw_Mobile_app_re_catg.svg"),
+        },
+        {
+          item: "Fragile Items. ",
+          img: require("../../assets/photo/undraw_cup_of_tea_6nqg.svg"),
+        },
+      ],
+      wait: 200,
+    };
+  },
   mounted() {
     this.so = ScrollOut({
       scope: this.$el,
